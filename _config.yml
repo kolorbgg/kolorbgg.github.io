@@ -3,13 +3,24 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: kolorbgg
 subtitle: ''
-description: ''
+description: 'Mr.H'
 keywords:
-author: John Doe
-language: en
+author: kolor
+language: zh-CN 
 timezone: ''
+
+index:
+  slogan:
+    enable: true
+    text: "Please type your slogan here."
+    api:
+      enable: true
+      url: "https://v1.hitokoto.cn/"
+      method: "GET"
+      headers: {}
+      keys: ["hitokoto"]
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -40,7 +51,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true 
 relative_link: false
 future: true
 syntax_highlighter: highlight.js
@@ -96,11 +107,11 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: fluid 
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/kolorbgg/kolorbgg.github.io.git 
-  branch: hexo 
+  repo: git@github.com:kolorbgg/kolorbgg.github.io.git 
+  branch: master
